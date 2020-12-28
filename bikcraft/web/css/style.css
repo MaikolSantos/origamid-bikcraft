@@ -11,6 +11,7 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .btn {
@@ -80,7 +81,7 @@ img {
     top: 0;
     width: 100%;
     background: #fec63e;
-    padding: 10px 0;
+    padding: 15px 0;
     z-index: 10;
 }
 
@@ -101,7 +102,7 @@ img {
     letter-spacing: .1em;
     font-size: 14px;
     line-height: 20px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .header_menu ul li a:hover {
