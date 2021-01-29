@@ -24,7 +24,7 @@
 .contato_form input {
     display: block;
     width: 100%;
-    border: 4px solid #fec63e;
+    border: 4px solid $primary-color;
     background: none;
     padding: 7px 10px;
     margin-bottom: 10px;
@@ -37,7 +37,7 @@
     display: block;
     width: 100%;
     height: 120px;
-    border: 4px solid #fec63e;
+    border: 4px solid $primary-color;
     background: none;
     padding: 7px 10px;
     margin-bottom: 20px;
@@ -55,7 +55,7 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
-    color: #fec63e;
+    color: $primary-color;
     font-weight: bold;
 }
 
@@ -80,13 +80,13 @@
 }
 
 .contato_dados ul li a {
-    border: 3px solid #fec63e;
+    border: 3px solid $primary-color;
     padding: 10px;
     display: block;
 }
 
 .contato_dados ul li a:hover {
-    border-color: #000000;
+    border-color: $second-color;
 }
 
 .contato_mapa {

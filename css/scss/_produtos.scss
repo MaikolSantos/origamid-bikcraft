@@ -8,7 +8,7 @@
 }
 
 .produto_item h2 {
-    color: #ffffff;
+    color: $third-color;
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -24,12 +24,12 @@
     display: block;
     width: 60px;
     height: 3px;
-    background: #ffffff;
+    background: $third-color;
     margin: 6px auto 8px auto;
 }
 
 .produto_icone {
-    background: #000000;
+    background: $second-color;
     padding: 70px 0;
 }
 
@@ -38,11 +38,11 @@
 }
 
 .produto_info {
-    background: #000000;
+    background: $second-color;
 }
 
 .produto_info p {
-    color: #ffffff;
+    color: $third-color;
     font-size: 18px;
     line-height: 25px;
     height: 180px;
@@ -50,7 +50,7 @@
 }
 
 .produto_info ul li {
-    background: #fec63e;
+    background: $primary-color;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 20px;
@@ -73,19 +73,19 @@
 /* Orçamento */
 
 .orcamento {
-    background: #000000;
+    background: $second-color;
     width: 100%;
     margin-top: 60px;
     padding: 40px 0;
-    color: #ffffff;
+    color: $third-color;
 }
 
 .orcamento h2 {
-    color: #fec63e;
+    color: $primary-color;
 }
 
 .orcamento h2::after {
-    background: #fec63e;
+    background: $primary-color;
 }
 
 .form {
@@ -103,9 +103,9 @@
 .form input {
     display: block;
     width: 100%;
-    border: 4px solid #fec63e;
+    border: 4px solid $primary-color;
     background: none;
-    color: #ffffff;
+    color: $third-color;
     padding: 7px 10px;
     margin-bottom: 10px;
     outline: none;
@@ -117,9 +117,9 @@
     display: block;
     width: 100%;
     height: 120px;
-    border: 4px solid #fec63e;
+    border: 4px solid $primary-color;
     background: none;
-    color: #ffffff;
+    color: $third-color;
     padding: 7px 10px;
     margin-bottom: 20px;
     outline: none;
@@ -133,14 +133,14 @@
 }
 
 .orcamento_dados {
-    color: #ffffff; 
+    color: $third-color; 
 }
 
 .orcamento_dados h3 {
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
-    color: #fec63e;
+    color: $primary-color;
     font-weight: bold;
 }
 
