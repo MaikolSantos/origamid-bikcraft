@@ -1,0 +1,88 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+$container: 960px;
+$gutter: 20px;
+$colunas: 16; 
+
+%grid { /* para seletores que não existem nós atribuímos o % */
+	float: left;
+	margin-left: $gutter / 2;
+	margin-right: $gutter / 2;
+}
+
+@for $i from 1 through $colunas {
+	$width: $container / $colunas * $i - $gutter;
+	.grid-#{$i} {
+		@extend %grid;
+		width: $width;
+	};
+}
+
+.grid-1-3 {
+	@extend %grid;
+	width: $container / 3 - $gutter;
+}
+
+.container {
+	width: $container;
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+}
+
+.container:after, .container:before {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+@media only screen and (min-width: 788px) and (max-width: 979px){
+	$container: 768px; 
+
+	@for $i from 1 through $colunas {
+		$width: $container / $colunas * $i - $gutter;
+		.grid-#{$i} {
+			width: $width;
+		};
+	}
+
+	.grid-1-3 {
+		@extend %grid;
+		width: $container / 3 - $gutter;
+	}
+
+	.container {
+		width: $container;
+	}
+}
+
+@media only screen and (max-width: 787px){
+	$container: 300px;
+
+	%mobile {
+		width: $container;
+		margin: 0 0 20px 0;
+		float: none;
+	}
+
+	@for $i from 1 through $colunas {
+		.grid#{$i} {
+			@extend %mobile;
+		}
+	}
+
+	.grid-1-3 {
+		@extend %mobile;
+	}
+
+	.container {
+		width: $container;
+	}
+}
