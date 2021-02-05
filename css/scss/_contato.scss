@@ -2,6 +2,11 @@
     background: url(../img/bg-contato.jpg) no-repeat center;
     background-size: cover;
     margin-top: 73px;
+    @include d(m) {
+        margin-top: 0px;
+    }
+    
+
 }
 
 .contato {
@@ -11,6 +16,10 @@
 
 .contato_form {
     padding-right: 60px;
+    @include d(m) {
+        padding-right: 0px;
+		margin-bottom: 40px;
+    }
 }
 
 .contato_form label {
